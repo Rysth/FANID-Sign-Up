@@ -86,7 +86,6 @@ img {
   padding: 1em;
   border-radius: 0.5rem;
   gap: 1em;
-  transition: 0.5s;
 }
 
 .form-page-visible {
@@ -128,6 +127,7 @@ img {
   font-size: 1rem;
   font-family: var(--FF-primary);
 }
+
 .form-select {
   width: 100%;
 }
@@ -136,15 +136,24 @@ img {
   color: var(--CL-neutral-white);
 }
 
+.form-item {
+  padding: 0.25em 0.75em;
+}
+
 .form-image {
-  position: relative;
   width: 225px;
   height: 225px;
   background-color: var(--CL-primary-dark-gray);
   margin: auto;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   border: 1px solid var(--CL-neutral-white);
+}
+
+.form-document {
+  border-radius: 0;
+  width: 300px;
+  height: 225px;
 }
 
 .form-upload-text {
@@ -169,7 +178,7 @@ img {
   display: none;
 }
 
-.form-item {
+.form-upload-document .form-item {
   padding: 0.3em 1em;
   border-radius: 0.25rem;
   border: none;
@@ -190,6 +199,7 @@ img {
   font-weight: 600;
   max-height: 3em;
   width: 7.5em;
+  border: none;
   transition: 0.2s;
 }
 

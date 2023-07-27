@@ -1,6 +1,7 @@
 const formElement = document.querySelector('#form');
+const submitButton = document.querySelector('#btn-submit');
 
-formElement.addEventListener('submit', (event) => {
+submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   const formData = new FormData(formElement);
 
@@ -15,10 +16,12 @@ formElement.addEventListener('submit', (event) => {
   const photoFile = photoInput.files[0];
 
   /* Paso #3 */
+  const documentInput = document.getElementById('document');
+  const documentFile = documentInput.files[0];
+
+  /* Paso #4 */
   const team = formData.get('team');
   const socio = formData.get('socio');
-
-  console.log(photoFile);
 
   const requiredFields = [email, cedula, name, lastname, team, socio];
   const areAllFieldsFilled = requiredFields.every((fieldValue) => !!fieldValue);
@@ -30,6 +33,7 @@ formElement.addEventListener('submit', (event) => {
       nombres: name,
       apellidos: lastname,
       fotoPerfil: photoFile.name,
+      fotoDocumento: documentFile.name,
       equipo: team,
       socio: socio,
     };

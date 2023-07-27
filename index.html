@@ -22,7 +22,7 @@
     <main class="main">
       <div class="container">
         <form id="form" action="#" class="form">
-          <div class="form-page form-page-visible">
+          <div class="form-page form-page-hide">
             <div class="form-group">
               <p class="form-number">Paso: #1</p>
               <h2 class="form-title">Estamos listo para Empezar</h2>
@@ -79,9 +79,40 @@
               </button>
             </div>
           </div>
-          <div class="form-page form-page-hide">
+          <div class="form-page form-page-visible">
             <div class="form-group">
               <p class="form-number">Paso: #3</p>
+              <h2 class="form-title">Por Seguridad Validaremos quien eres</h2>
+              <p class="form-subtitle text-center">
+                Sube tu foto de tu cédula o pasaporte
+              </p>
+            </div>
+            <div class="form-group">
+              <img class="form-image form-document" id="previewDocument" src="#" />
+            </div>
+            <div class="form-group">
+              <label for="document" class="form-label form-upload-text">
+                <i class="fa-solid fa-image"></i> Subir Foto
+              </label>
+              <input
+                class="form-upload-file"
+                type="file"
+                id="document"
+                accept="image/png, image/jpg, image/jpeg"
+              />
+            </div>
+            <div class="form-actions">
+              <button type="button" class="form-item btn btn-return return-2">
+                Regresar
+              </button>
+              <button type="button" class="form-item btn btn-next next-3">
+                Continuar
+              </button>
+            </div>
+          </div>
+          <div class="form-page form-page-hide">
+            <div class="form-group">
+              <p class="form-number">Paso: #4</p>
               <h2 class="form-title">Queremos Conocerte Mejor</h2>
               <p class="form-subtitle text-center">
                 Dinos tus preferencia de Equipo
@@ -103,10 +134,12 @@
               </select>
             </div>
             <div class="form-group form-actions">
-              <button type="button" class="form-item btn btn-return return-2">
+              <button type="button" class="form-item btn btn-return return-3">
                 Regresar
               </button>
-              <button type="submit" class="form-item btn btn-submit">Envíar</button>
+              <button id="btn-submit" type="submit" class="form-item btn btn-submit">
+                Envíar
+              </button>
             </div>
           </div>
         </form>
