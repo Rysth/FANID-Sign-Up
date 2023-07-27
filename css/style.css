@@ -74,12 +74,12 @@ img {
 .form {
   width: min(100%, 27em);
   height: 38em;
-  background-color: var(--CL-primary-purple);
+  background-color: var(--CL-neutral-white);
   padding: 1em;
   margin: 0 auto;
   display: grid;
   position: relative;
-  box-shadow: 0 3px 7px var(--CL-neutral-black);
+  box-shadow: 0 0px 3px var(--CL-neutral-black);
 }
 
 .form-page {
@@ -100,12 +100,10 @@ img {
   margin: 0 auto;
   font-size: 2.75rem;
   font-weight: bold;
-  color: var(--CL-neutral-white);
 }
 
 .form-title {
   text-align: center;
-  color: var(--CL-neutral-white);
   margin: 0;
   display: grid;
   place-items: center;
@@ -114,7 +112,6 @@ img {
 }
 
 .form-subtitle {
-  color: var(--CL-neutral-white);
   font-style: italic;
 }
 
@@ -132,28 +129,20 @@ img {
   width: 100%;
 }
 
-.form-label {
-  color: var(--CL-neutral-white);
-}
-
-.form-item {
-  padding: 0.25em 0.75em;
-}
-
 .form-image {
   width: 225px;
   height: 225px;
-  background-color: var(--CL-primary-dark-gray);
   margin: auto;
+  border-radius: 100%;
   object-fit: contain;
-  border-radius: 50%;
-  border: 1px solid var(--CL-neutral-white);
+  outline: 3px solid var(--CL-primary-dark-gray);
 }
 
 .form-document {
   border-radius: 0;
   width: 300px;
   height: 225px;
+  object-fit: cover;
 }
 
 .form-upload-text {
@@ -161,27 +150,22 @@ img {
   place-items: center;
   justify-content: center;
   gap: 0.5em;
-  background-color: var(--CL-primary-dark-gray);
+  background-color: var(--CL-primary-blue);
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.15s;
   padding: 0.5em 0;
-}
-
-.form-upload-text:hover {
-  background-color: #1d1c4d;
+  color: var(--CL-neutral-white);
 }
 
 .form-upload-file {
   display: none;
 }
 
-.form-upload-document .form-item {
+.form-item {
   padding: 0.3em 1em;
-  border-radius: 0.25rem;
-  border: none;
 }
 
 .form-actions {
@@ -204,22 +188,26 @@ img {
 }
 
 .btn-next {
-  background-color: var(--CL-primary-dark-gray);
+  background-color: var(--CL-primary-purple);
   color: var(--CL-neutral-white);
 }
 
 .btn-next:hover {
-  background-color: var(--CL-primary-cyan);
-  color: black;
+  background-color: var(--CL-primary-dark-gray);
 }
 
-.btn-return:hover {
+.btn-return {
+  color: var(--CL-neutral-white);
   background-color: var(--CL-primary-red);
 }
 
+.btn-return:hover {
+  background-color: var(--CL-primary-dark-gray);
+}
+
 .btn-submit {
-  background-color: var(--CL-primary-green);
-  text-transform: uppercase;
+  background-color: var(--CL-primary-blue);
+  color: var(--CL-neutral-white);
 }
 
 .btn-submit:hover {
