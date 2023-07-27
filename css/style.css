@@ -142,7 +142,6 @@ img {
   border-radius: 0;
   width: 300px;
   height: 225px;
-  object-fit: cover;
 }
 
 .form-upload-text {
