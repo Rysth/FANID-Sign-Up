@@ -35,7 +35,6 @@ nextTwo.addEventListener('click', () => {
 returnOne.addEventListener('click', () => {
   hiddenPages.forEach((page, index) => {
     if (index === 0) {
-      console.log(page);
       visiblePage.classList.add('form-page-hide');
       page.classList.remove('form-page-hide');
       page.classList.add('form-page-visible');
@@ -49,7 +48,6 @@ returnOne.addEventListener('click', () => {
 returnTwo.addEventListener('click', () => {
   hiddenPages.forEach((page, index) => {
     if (index === 1) {
-      console.log(page);
       visiblePage.classList.add('form-page-hide');
       page.classList.remove('form-page-hide');
       page.classList.add('form-page-visible');
