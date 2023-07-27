@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FANID - Registro Express</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container text-center">
+        <h1 class="h1">FANID - Registro Express</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <form action="#" class="form">
+          <div class="form-page form-page-visible">
+            <div class="form-group">
+              <p class="form-number">Paso: #1</p>
+              <h2 class="form-title">Estamos listo para Empezar</h2>
+              <p class="form-subtitle text-center">Ahora ingresa tu Información</p>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email: </label>
+              <input class="form-item" type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="cedula" class="form-label">Cédula: </label>
+              <input class="form-item" type="text" name="cedula" id="cedula" />
+            </div>
+            <div class="form-group">
+              <label for="name" class="form-label">Nombres: </label>
+              <input class="form-item" type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="form-label">Apellidos: </label>
+              <input class="form-item" type="text" name="lastname" id="lastname" />
+            </div>
+            <div class="form-actions">
+              <button type="button" class="form-item btn btn-next next-1">
+                Continuar
+              </button>
+            </div>
+          </div>
+          <div class="form-page form-page-hide">
+            <div class="form-group">
+              <p class="form-number">Paso: #2</p>
+              <h2 class="form-title">Tú Foto de Perfil es Importante</h2>
+              <p class="form-subtitle text-center">
+                Para su Credencial, Ahora Sube tu Foto
+              </p>
+            </div>
+            <div class="form-group">
+              <img class="form-image" id="previewImage" src="#" />
+            </div>
+            <div class="form-group">
+              <label for="photo" class="form-label form-upload-text">
+                Subir Foto
+              </label>
+              <input
+                class="form-upload-file"
+                type="file"
+                id="photo"
+                accept="image/*"
+              />
+            </div>
+            <div class="form-actions">
+              <button type="button" class="form-item btn btn-return return-1">
+                Regresar
+              </button>
+              <button type="button" class="form-item btn btn-next next-2">
+                Continuar
+              </button>
+            </div>
+          </div>
+          <div class="form-page form-page-hide">
+            <h2 class="form-title">Información Equipos</h2>
+            <div class="form-group">
+              <label for="team" class="form-label"
+                >Seleccione su Equipo Favorito:
+              </label>
+              <select name="team" id="team"></select>
+            </div>
+            <div class="form-group form-actions">
+              <button type="button" class="form-item btn btn-return return-2">
+                Regresar
+              </button>
+              <button type="button" class="form-item btn submit">Envíar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./js/photo.js"></script>
+    <script src="./js/team.js"></script>
+    <script src="./js/buttons.js"></script>
+  </body>
+</html>
