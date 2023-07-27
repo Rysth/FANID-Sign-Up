@@ -22,7 +22,7 @@
     <main class="main">
       <div class="container">
         <form action="#" class="form">
-          <div class="form-page form-page-visible">
+          <div class="form-page form-page-hide">
             <div class="form-group">
               <p class="form-number">Paso: #1</p>
               <h2 class="form-title">Estamos listo para Empezar</h2>
@@ -54,16 +54,14 @@
             <div class="form-group">
               <p class="form-number">Paso: #2</p>
               <h2 class="form-title">Tú Foto de Perfil es Importante</h2>
-              <p class="form-subtitle text-center">
-                Para su Credencial, Ahora Sube tu Foto
-              </p>
+              <p class="form-subtitle text-center">Para su Credencial</p>
             </div>
             <div class="form-group">
               <img class="form-image" id="previewImage" src="#" />
             </div>
             <div class="form-group">
               <label for="photo" class="form-label form-upload-text">
-                Subir Foto
+                <i class="fa-solid fa-image"></i> Subir Foto
               </label>
               <input
                 class="form-upload-file"
@@ -81,19 +79,34 @@
               </button>
             </div>
           </div>
-          <div class="form-page form-page-hide">
-            <h2 class="form-title">Información Equipos</h2>
+          <div class="form-page form-page-visible">
+            <div class="form-group">
+              <p class="form-number">Paso: #3</p>
+              <h2 class="form-title">Queremos Conocerte Mejor</h2>
+              <p class="form-subtitle text-center">
+                Dinos tus preferencia de Equipo
+                <br />
+                También si eres Socio/a
+              </p>
+            </div>
             <div class="form-group">
               <label for="team" class="form-label"
                 >Seleccione su Equipo Favorito:
               </label>
-              <select name="team" id="team"></select>
+              <select class="form-item form-select" name="team" id="team"></select>
+            </div>
+            <div class="form-group">
+              <label for="team" class="form-label">¿Eres Socio/a?: </label>
+              <select class="form-item" name="team" id="team">
+                <option value="true">Sí</option>
+                <option value="false">No</option>
+              </select>
             </div>
             <div class="form-group form-actions">
               <button type="button" class="form-item btn btn-return return-2">
                 Regresar
               </button>
-              <button type="button" class="form-item btn submit">Envíar</button>
+              <button type="button" class="form-item btn btn-submit">Envíar</button>
             </div>
           </div>
         </form>
